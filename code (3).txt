@@ -1,0 +1,6 @@
+// Zia configuration — paste your free Gemini API key between the quotes.
+// Get one at https://aistudio.google.com/  (no credit card needed)
+window.ZIA_CONFIG = {
+  GEMINI_API_KEY: "",
+  GEMINI_MODEL: "gemini-2.0-flash"   // if AI Studio lists another flash model, swap the name here
+};
