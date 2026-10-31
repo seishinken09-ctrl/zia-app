@@ -1,0 +1,213 @@
+// ===== ZIA QUESTION BANK =====
+// Each question: id, topic, q, options[], answer (index of correct option), rationale
+// Topics: Fundamentals | Med-Surg | OB-Gyne | Peds | Psych | Community Health
+window.ZIA_QUESTIONS = [
+  { id:"F1", topic:"Fundamentals",
+    q:"A patient returns from tonsillectomy. Which position is most appropriate?",
+    options:["Supine with one pillow","Side-lying or prone","Trendelenburg","High Fowler's"],
+    answer:1,
+    rationale:"Side-lying or prone allows blood and secretions to drain out of the mouth instead of pooling in the pharynx, where they could be aspirated. The head is usually turned to the side." },
+
+  { id:"F2", topic:"Fundamentals",
+    q:"When opening the airway of a trauma patient with suspected cervical spine injury, the nurse should use the:",
+    options:["Head-tilt, chin-lift maneuver","Jaw-thrust maneuver","Neck hyperextension","Suctioning of the oropharynx first"],
+    answer:1,
+    rationale:"The jaw-thrust maneuver opens the airway without moving the cervical spine. Head-tilt/chin-lift is reserved for patients without suspected spinal injury (it can worsen cord damage)." },
+
+  { id:"F3", topic:"Fundamentals",
+    q:"A patient is on contact precautions for Clostridioides difficile. Hand hygiene should be performed with:",
+    options:["Alcohol-based hand rub","Soap and running water","Antiseptic wipes","Gloves only"],
+    answer:1,
+    rationale:"C. difficile forms spores that alcohol-based products do not kill. Soap and running water with friction physically removes spores. Gloves are still used, but they never replace hand hygiene." },
+
+  { id:"F4", topic:"Fundamentals",
+    q:"During a sterile procedure, the sterile field becomes contaminated when:",
+    options:["The nurse coughs while wearing a mask","The nurse turns her back on the field","A sterile item is placed on the far edge of the field","The sterile drape is slightly wrinkled"],
+    answer:1,
+    rationale:"Anything the nurse cannot see or control — including turning her back — contaminates the field. Other contamination rules: anything below waist level is unsterile, and moisture striking through a drape carries microorganisms with it." },
+
+  { id:"F5", topic:"Fundamentals",
+    q:"Which documentation principle is correct?",
+    options:["Errors may be erased and rewritten","If it was not documented, it was not done","Late entries are never allowed","Verbal orders do not need countersigning"],
+    answer:1,
+    rationale:"Care that is not documented cannot be proven and is legally considered not done. Corrections are made with a single line, initials, date and time — never erased or scribbled out. Late entries must be labeled as such." },
+
+  { id:"M1", topic:"Med-Surg",
+    q:"The earliest sign of digoxin toxicity in an adult is usually:",
+    options:["Blurred yellow-green vision","Anorexia, nausea and vomiting","Severe bradycardia","Confusion"],
+    answer:1,
+    rationale:"Gastrointestinal symptoms (anorexia, nausea, vomiting) appear first. Visual disturbances (yellow-green halos), confusion and arrhythmias (bradycardia, heart block) come later. Teach the patient: hold the dose and call the MD if the pulse is below 60 bpm." },
+
+  { id:"M2", topic:"Med-Surg",
+    q:"A patient takes NPH insulin at 7:00 AM. When is the greatest risk of hypoglycemia?",
+    options:["Immediately after injection","About 4 to 12 hours after the dose","Just before bedtime only","24 hours after the dose"],
+    answer:1,
+    rationale:"NPH is intermediate-acting: onset 1–2 hours, peak 4–12 hours (roughly late morning to evening), duration up to 18 hours. The peak is when hypoglycemia is most likely — teach the patient to have a snack and monitor glucose during that window." },
+
+  { id:"M3", topic:"Med-Surg",
+    q:"Which ECG change is most characteristic of hypokalemia?",
+    options:["Peaked T waves","Flattened T waves with U waves","Shortened QT interval","Elevated ST segment"],
+    answer:1,
+    rationale:"Low potassium flattens T waves and produces a visible U wave after the T wave; it can also cause ST depression and dangerous arrhythmias. (Peaked T waves belong to hyperkalemia.) IV potassium is never given IV push — maximum 10 mEq/hour via a peripheral line, always diluted." },
+
+  { id:"M4", topic:"Med-Surg",
+    q:"Forty minutes into a blood transfusion, the patient develops fever, chills and back pain. The nurse's first action is to:",
+    options:["Slow the infusion and continue","Stop the transfusion and keep the line open with normal saline","Give antihistamine as ordered","Remove the needle and apply pressure"],
+    answer:1,
+    rationale:"These are classic signs of a transfusion reaction. Stop the transfusion immediately, maintain IV access with plain normal saline (never the blood tubing), keep the remaining blood and tubing for laboratory analysis, assess vital signs and notify the physician/stat lab." },
+
+  { id:"M5", topic:"Med-Surg",
+    q:"Using the Parkland formula, the 24-hour fluid requirement for a 70-kg adult with 40% TBSA burns is:",
+    options:["2,800 mL","5,600 mL","11,200 mL","1,120 mL"],
+    answer:2,
+    rationale:"Parkland: 4 mL x body weight (kg) x %TBSA = 4 x 70 x 40 = 11,200 mL over 24 hours. Half is given in the first 8 hours from the time of the burn (not from arrival), and the remaining half over the next 16 hours. Urine output (adult goal ~30–50 mL/hr) guides titration." },
+
+  { id:"M6", topic:"Med-Surg",
+    q:"After a lumbar puncture, the patient should be positioned:",
+    options:["High Fowler's","Flat on the back (supine) for several hours","Side-lying with knees flexed only when eating","Prone with the head turned"],
+    answer:1,
+    rationale:"Lying flat after lumbar puncture helps seal the dural puncture site and reduces the risk of a post-lumbar-puncture (spinal) headache, which is typically positional — worse when sitting or standing, relieved when lying down." },
+
+  { id:"M7", topic:"Med-Surg",
+    q:"Cushing's triad — a late sign of increased intracranial pressure — consists of:",
+    options:["Hypertension, bradycardia, irregular respirations","Hypotension, tachycardia, fever","Hypertension, tachycardia, hyperthermia","Bradycardia, hypotension, apnea"],
+    answer:0,
+    rationale:"Cushing's triad is the classic late warning: widening pulse pressure (rising systolic with stable diastolic), bradycardia, and irregular respirations. Positioning at 30 degrees with the head in midline, avoiding hip flexion and keeping the neck neutral aids venous drainage." },
+
+  { id:"O1", topic:"OB-Gyne",
+    q:"A patient receiving magnesium sulfate for severe preeclampsia has absent deep tendon reflexes and a respiratory rate of 12. The nurse should:",
+    options:["Increase the infusion rate","Continue the infusion and monitor hourly","Stop the infusion, notify the physician and prepare calcium gluconate","Give oxygen and place in Trendelenburg"],
+    answer:2,
+    rationale:"Absent deep tendon reflexes and respiratory depression below 16 breaths/min signal magnesium toxicity. Actions: stop the infusion, stay with the patient, notify the physician, and have calcium gluconate (the antidote) ready. Also monitor urine output (keep above 30 mL/hr) and level of consciousness." },
+
+  { id:"O2", topic:"OB-Gyne",
+    q:"Two hours postpartum, the uterus is boggy and lochia is excessive. The first nursing action is to:",
+    options:["Notify the physician","Massage the fundus until firm","Administer oxytocin as ordered","Catheterize the bladder"],
+    answer:1,
+    rationale:"Uterine atony is the most common cause of postpartum hemorrhage. First action: massage the fundus firmly until it contracts (it should feel like a grapefruit at or below the umbilicus), then reassess. A full bladder displaces the uterus — empty the bladder if the fundus stays boggy. Oxytocin and notification follow." },
+
+  { id:"O3", topic:"OB-Gyne",
+    q:"Which finding indicates true labor rather than false labor?",
+    options:["Contractions are irregular and stop with walking","Contractions become regular, increase in intensity, and cause cervical dilation","Discomfort is confined to the abdomen","The mother can sleep through the contractions"],
+    answer:1,
+    rationale:"True labor has regular contractions that grow stronger, longer and closer together, cause progressive cervical effacement and dilation, and continue despite activity changes. False (Braxton Hicks) contractions are irregular, do not intensify, do not change the cervix, and often stop with rest or walking." },
+
+  { id:"O4", topic:"OB-Gyne",
+    q:"Which is NOT part of the Apgar score?",
+    options:["Heart rate","Respiratory effort","Body weight","Muscle tone"],
+    answer:2,
+    rationale:"Apgar is assessed at 1 and 5 minutes after birth and uses: Appearance (color), Pulse (heart rate), Grimace (reflex irritability), Activity (muscle tone), Respiration. Body weight is measured but is not part of the score." },
+
+  { id:"O5", topic:"OB-Gyne",
+    q:"At 24 weeks of gestation, the fundal height is expected to be:",
+    options:["At the level of the umbilicus","At the xiphoid process","2 cm above the pubic symphysis","32 cm above the symphysis"],
+    answer:0,
+    rationale:"From about 20 to 36 weeks, fundal height in centimeters roughly equals the weeks of gestation (McDonald's rule), and at 24 weeks the fundus is at the level of the umbilicus. Above 36 weeks the fundal height may drop as the fetal head descends into the pelvis." },
+
+  { id:"P1", topic:"Peds",
+    q:"According to Erikson, a toddler (1–3 years) is resolving the crisis of:",
+    options:["Trust vs. mistrust","Autonomy vs. shame and doubt","Initiative vs. guilt","Industry vs. inferiority"],
+    answer:1,
+    rationale:"Toddlers strive for autonomy — "I do it myself." Excessive restriction or punishment leads to shame and doubt. Allow safe choices (this cup or that cup) to support healthy autonomy. (Trust vs. mistrust is infancy; initiative vs. guilt is preschool; industry vs. inferiority is school age.)" },
+
+  { id:"P2", topic:"Peds",
+    q:"Which assessment finding most suggests dehydration in an infant?",
+    options:["Anterior fontanelle slightly bulging","Sunken anterior fontanelle and decreased urine output","Normal skin turgor with frequent stools","Increased tearing and saliva"],
+    answer:1,
+    rationale:"Dehydration in infants shows as a sunken anterior fontanelle, sunken eyes, decreased or absent tears, dry mucous membranes, poor skin turgor, fewer wet diapers (oliguria is below 1 mL/kg/hr), and lethargy. A bulging fontanelle suggests increased intracranial pressure instead." },
+
+  { id:"P3", topic:"Peds",
+    q:"Under the DOH Expanded Program on Immunization (EPI), the measles-rubella vaccine is given at:",
+    options:["At birth","6 months","9 months","12 months"],
+    answer:2,
+    rationale:"In the Philippine EPI schedule, BCG and hepatitis B are given at birth, and the first measles-rubella dose is at 9 months. Maternal antibodies before 9 months can neutralize the vaccine, which is why it is delayed. (Always check the current DOH schedule for updates.)" },
+
+  { id:"P4", topic:"Peds",
+    q:"The most serious complication the nurse monitors for in Kawasaki disease is:",
+    options:["Hepatitis","Coronary artery aneurysms","Renal failure","Pneumonia"],
+    answer:1,
+    rationale:"Kawasaki disease is an acute systemic vasculitis of unknown cause. Untreated, it can damage the coronary arteries, forming aneurysms that may thrombose or rupture. Treatment is IV immunoglobulin plus aspirin; the nurse monitors cardiac status and teaches long-term follow-up." },
+
+  { id:"P5", topic:"Peds",
+    q:"A 3-year-old has a harsh barking cough and inspiratory stridor that worsened at night. The nurse anticipates:",
+    options:["Antibiotics and strict bed rest","Cool mist, corticosteroids and calm handling","Immediate intubation","Chest physiotherapy"],
+    answer:1,
+    rationale:"This presentation is viral croup (laryngotracheobronchitis). Management: cool mist or humidified air, nebulized racemic epinephrine and/or systemic corticosteroids for moderate cases, and calm handling — crying worsens airway swelling. Keep the child upright and quiet and monitor stridor at rest." },
+
+  { id:"S1", topic:"Psych",
+    q:"A patient says, "Sometimes I feel like not waking up anymore." The best nursing response is:",
+    options:["Don't talk like that, you have so much to live for","Are you thinking about killing yourself?","Why do you feel this way?","Let's talk about something else"],
+    answer:1,
+    rationale:"Always assess suicidal ideation directly and calmly — asking does NOT plant the idea or increase risk; it opens the door for the patient to be honest. Avoid "why" questions (they sound judgmental), false reassurance, and changing the subject." },
+
+  { id:"S2", topic:"Psych",
+    q:"A patient with severe depression is at highest risk for suicide when:",
+    options:["Depression is at its deepest and energy is absent","Energy begins to return while mood is still depressed","The patient starts enjoying activities again","The patient is discharged"],
+    answer:1,
+    rationale:"A severely depressed person may lack the energy to act on suicidal thoughts. As energy returns before mood lifts, the patient can now plan and carry out suicide. This window demands the closest observation and a safety plan." },
+
+  { id:"S3", topic:"Psych",
+    q:"A patient with schizophrenia says, "The CIA put a chip in my leg." The therapeutic response is:",
+    options:["That's not true, no one put a chip in you","Tell me more about what you are feeling","I believe the CIA is tracking you too","You need your medication now"],
+    answer:1,
+    rationale:"Do not argue with or reinforce delusions. Respond to the underlying feeling and stay with the patient's experience: "That sounds frightening — tell me more about what you are experiencing." Reality-testing is not forced; trust and safety come first." },
+
+  { id:"S4", topic:"Psych",
+    q:"A patient with bulimia nervosa who self-induces vomiting is most at risk for:",
+    options:["Hyperkalemia","Hypokalemia","Hypernatremia","Polycythemia"],
+    answer:1,
+    rationale:"Repeated vomiting loses gastric potassium and hydrochloric acid, causing hypokalemia and metabolic alkalosis. Complications include muscle weakness, dangerous arrhythmias, and dental enamel erosion. Monitor electrolytes and cardiac rhythm; fluid and electrolyte correction is a priority." },
+
+  { id:"C1", topic:"Community Health",
+    q:"Which of the following is an example of PRIMARY prevention?",
+    options:["Mammography screening","Immunization of infants","Cardiac rehabilitation","Hemodialysis"],
+    answer:1,
+    rationale:"Primary prevention prevents disease before it occurs: immunization, health education, safe water, proper nutrition. Screening (mammography, BP measurement) is secondary prevention — early detection. Rehabilitation and dialysis are tertiary — reducing disability after disease." },
+
+  { id:"C2", topic:"Community Health",
+    q:"The number of NEW cases of dengue in a barangay during one year is a measure of:",
+    options:["Prevalence","Incidence","Mortality rate","Attack rate only"],
+    answer:1,
+    rationale:"Incidence counts new cases in a population over a defined period — it measures the risk of developing the disease. Prevalence counts all existing cases (new + old) at a point or period in time — it measures the burden of disease." },
+
+  { id:"C3", topic:"Community Health",
+    q:"For suspected pulmonary tuberculosis, the best time to collect a sputum specimen is:",
+    options:["Immediately after a meal","Early morning on rising, before eating","After chest physiotherapy only","At bedtime"],
+    answer:1,
+    rationale:"An early-morning specimen (deep cough, before food) is thick and concentrated and is more likely to contain tubercle bacilli, raising the yield of microscopy and culture. Specimens are collected per the current DOH NTP protocol, and droplet precautions are observed." },
+
+  { id:"C4", topic:"Community Health",
+    q:"The first step in the community health nursing process is:",
+    options:["Implementing health programs","Community assessment / identifying community needs","Evaluating program outcomes","Submitting a budget proposal"],
+    answer:1,
+    rationale:"Everything begins with assessment — identifying the population, its needs, resources, and priorities (often through surveys, records review and key informants). Planning, implementation and evaluation follow, and the cycle repeats (the nursing process: ADPIE)." }
+];
+
+// ===== ZIA FLASHCARDS =====
+// Each card: id, topic, front, back
+window.ZIA_CARDS = [
+  { id:"K1", topic:"Pharmacology", front:"Digoxin — therapeutic serum level?", back:"0.5–2.0 ng/mL. Toxicity: anorexia, nausea, yellow-green vision, bradycardia. Hold and notify MD if pulse is under 60 bpm." },
+  { id:"K2", topic:"Pharmacology", front:"Lithium — therapeutic serum level?", back:"0.6–1.2 mEq/L. Toxicity: tremors, vomiting, diarrhea, confusion. Maintain steady salt and fluid intake; avoid dehydration and NSAIDs." },
+  { id:"K3", topic:"Pharmacology", front:"Theophylline — therapeutic serum level?", back:"10–20 mcg/mL. Toxicity: nausea, tachycardia, arrhythmias, seizures. Monitor heart rate and levels." },
+  { id:"K4", topic:"Pharmacology", front:"Phenytoin — therapeutic serum level?", back:"10–20 mcg/mL (total). Watch for gingival hyperplasia, nystagmus, ataxia; give via large vein — it is irritating to tissues." },
+  { id:"K5", topic:"Pharmacology", front:"Heparin — antidote and key monitor?", back:"Protamine sulfate. Monitor aPTT (therapeutic 1.5–2.5x control), platelets (HIT), and bleeding signs. No aspirin/IM injections." },
+  { id:"K6", topic:"Pharmacology", front:"Warfarin — antidote and key monitor?", back:"Vitamin K (and FFP/PCC for major bleeding). Monitor INR (therapeutic 2.0–3.0 for most indications). Consistent vitamin K intake." },
+  { id:"K7", topic:"Pharmacology", front:"Acetaminophen toxicity — antidote?", back:"N-acetylcysteine (NAC), most effective within 8–10 hours. Toxicity quietly damages the liver — ask about combination cold remedies." },
+  { id:"K8", topic:"Pharmacology", front:"Opioid overdose — antidote?", back:"Naloxone (Narcan). Watch for return of pain and respiratory depression recurrence — naloxone may wear off before the opioid does." },
+  { id:"K9", topic:"Lab Values", front:"Normal serum sodium (adult)?", back:"135–145 mEq/L. Below = hyponatremia (confusion, seizures); above = hypernatremia (thirst, dry mucosa, irritability)." },
+  { id:"K10", topic:"Lab Values", front:"Normal serum potassium (adult)?", back:"3.5–5.0 mEq/L. Hypo: muscle weakness, U waves, leg cramps. Hyper: peaked T waves, paresthesias, cardiac arrest risk." },
+  { id:"K11", topic:"Lab Values", front:"Normal serum calcium (adult)?", back:"8.5–10.5 mg/dL. Hypocalcemia: Chvostek/Trousseau signs, tetany, prolonged QT. Hypercalcemia: constipation, "stones, bones, groans."" },
+  { id:"K12", topic:"Lab Values", front:"Normal fasting blood sugar (adult)?", back:"70–100 mg/dL (impaired fasting glucose: 100–125; diabetes: 126+ on two tests, or random 200+ with symptoms)." },
+  { id:"K13", topic:"Lab Values", front:"Normal hemoglobin — adult female / male?", back:"Female 12–16 g/dL; male 14–18 g/dL. Low = anemia (fatigue, pallor); assess for bleeding, nutrition, hydration status." },
+  { id:"K14", topic:"Lab Values", front:"Normal platelet count?", back:"150,000–400,000/mm3. Below 50,000 = risk with trauma; below 20,000 = spontaneous bleeding risk; watch petechiae and gum bleeding." },
+  { id:"K15", topic:"Lab Values", front:"Normal serum creatinine (adult)?", back:"0.6–1.2 mg/dL. Rises with impaired kidney function; paired with BUN (10–20 mg/dL) — both rise in renal failure." },
+  { id:"K16", topic:"Lab Values", front:"Normal INR for a patient on warfarin?", back:"2.0–3.0 (normal without therapy: 0.8–1.2). Above range = bleeding risk; below range = clot risk." },
+  { id:"K17", topic:"Formulas", front:"IV drop rate formula?", back:"Rate (gtt/min) = total volume (mL) x drop factor (gtt/mL) / time (min). Standard macrodrip set = 15 gtt/mL; microdrip = 60 gtt/mL." },
+  { id:"K18", topic:"Formulas", front:"Metric conversions every nurse needs?", back:"1 grain (gr) = 60 mg; 1 tsp = 5 mL; 1 tbsp = 15 mL; 1 oz = 30 mL; 1 kg = 2.2 lb; 1000 mL = 1 L." },
+  { id:"K19", topic:"Formulas", front:"Parkland burn formula?", back:"4 mL x weight (kg) x %TBSA burned = total fluid for 24 hours; half given in the first 8 hours from the time of burn. Titrate to urine output (adult 30–50 mL/hr)." },
+  { id:"K20", topic:"Formulas", front:"Pediatric maintenance fluid (Holliday-Segar)?", back:"100 mL/kg for first 10 kg, 50 mL/kg for next 10 kg, 20 mL/kg for each kg above 20. Example: 25 kg = 1000 + 500 + 100 = 1600 mL/day." },
+  { id:"K21", topic:"Fundamentals", front:"Normal adult vital signs?", back:"BP below 120/80; HR 60–100; RR 12–20; Temp 36.5–37.5 C (oral); SpO2 95–100%. Pain is the 5th vital sign — always assess it." },
+  { id:"K22", topic:"Fundamentals", front:"Infection chain — the 6 links?", back:"Infectious agent, reservoir, portal of exit, mode of transmission, portal of entry, susceptible host. Break any link (hand hygiene breaks transmission!) to stop infection." },
+  { id:"K23", topic:"Fundamentals", front:"Sterile field rules (the essentials)?", back:"Waist level and up is sterile; never turn your back on a sterile field; never reach over it; moisture striking through contaminates it; a sterile item touched by anything unsterile is contaminated." },
+  { id:"K24", topic:"Peds", front:"Erikson by stage — quick recall?", back:"Infant: trust vs mistrust. Toddler: autonomy vs shame/doubt. Preschool: initiative vs guilt. School age: industry vs inferiority. Adolescent: identity vs role confusion." }
+];
