@@ -1,0 +1,13 @@
+{
+  "name": "Zia — for Kezia",
+  "short_name": "Zia",
+  "description": "A nursing reviewer made with love.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#FAF7F2",
+  "theme_color": "#FAF7F2",
+  "icons": [
+    { "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ]
+}
